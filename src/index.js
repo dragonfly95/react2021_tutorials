@@ -10,12 +10,18 @@ import { render } from 'react-dom';
 import taskReducer from './reducers/tasks';
 
 import TodoApp from './containers/TodoApp';
+import Header from "./components/Header";
+import Routers from "./Routers";
 
 let store = createStore(taskReducer);
 
 render(
     <Provider store={store}>
         <TodoApp/>
+        <div>
+            Movie Theaters
+            <Routers />
+        </div>
     </Provider>,
   document.getElementById('root')
 );
