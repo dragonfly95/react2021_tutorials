@@ -4,6 +4,8 @@ const initialState = {
 };
 
 export default function tasksReducer(state = initialState, action) {
+    debugger
+    console.log('./reducers/tasks.js')
     switch (action.type) {
         case 'INPUT_TASK':
             return {

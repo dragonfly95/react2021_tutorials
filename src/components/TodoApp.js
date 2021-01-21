@@ -1,6 +1,8 @@
 import React from 'react';
 
 export default function TodoApp({ task, tasks, inputTask, addTask }) {
+    debugger
+    console.log('./components/TodoApp.js')
     return (
         <div>
             <input type="text" onChange={(e) => inputTask(e.target.value)} />
